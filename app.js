@@ -10,6 +10,9 @@
   };
   const $ = (selector, root=document) => root.querySelector(selector);
   const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
+  // Web3Forms access keys are public aliases tied to the recipients' inboxes.
+  // Keep recipient email addresses out of the site source; add one key per inbox.
+  const CONTACT_ACCESS_KEYS = ['816b9e7c-d1a3-4ccb-9cd3-fcb6d1df7d83', '15cf6f90-ad7d-4b78-a23f-982701e51a56'];
   const elements = {
     views: $$('[data-view]'), search: $('#search'), category: $('#filter-category'), time: $('#filter-time'),
     difficulty: $('#filter-difficulty'), diet: $('#filter-diet'), sort: $('#sort'), grid: $('#catalog-grid'), count: $('#results-count'),
@@ -113,13 +116,25 @@
   function closeMobileMenu(){mobileMenuOpen=false;$('#mobile-nav').hidden=true;$('#menu-toggle').setAttribute('aria-expanded','false');$('#menu-toggle').setAttribute('aria-label','Відкрити меню');}
   function resetFilters(){elements.search.value='';elements.category.value='all';elements.time.value='all';elements.difficulty.value='all';elements.diet.value='all';elements.sort.value='popular';renderCatalog();}
   function showCategory(name){elements.category.value=categories.includes(name)?name:'all';elements.search.value='';location.hash='recipes';if(location.hash==='#recipes')renderCatalog();}
-  function validateContact(event){
+  async function validateContact(event){
     event.preventDefault(); const form=event.currentTarget; const status=$('#form-status');status.textContent='';
     const fields=[['name',$('#contact-name'),'Введіть ім’я (не менше 2 символів).'],['email',$('#contact-email'),'Укажіть коректну адресу електронної пошти.'],['message',$('#contact-message'),'Напишіть повідомлення (не менше 10 символів).']];
     let firstInvalid=null;
     fields.forEach(([key,input,message])=>{const error=$(`[data-error="${key}"]`);const invalid=!input.checkValidity();error.textContent=invalid?message:'';input.setAttribute('aria-invalid',String(invalid));if(invalid&&!firstInvalid)firstInvalid=input;});
     if(firstInvalid){firstInvalid.focus();status.textContent='Будь ласка, перевірте позначені поля.';return;}
-    status.textContent='Усі поля заповнені. Повідомлення залишилося на цьому пристрої й не було надіслане: сайт не має сервера. Скопіюйте текст і надішліть його зі своєї пошти.';
+    const submitButton=$('button[type="submit"]',form);submitButton.disabled=true;status.textContent='Надсилаємо повідомлення…';
+    const formValues=Object.fromEntries(new FormData(form));
+    const results=await Promise.allSettled(CONTACT_ACCESS_KEYS.map(async accessKey=>{
+      const response=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({...formValues,access_key:accessKey,replyto:formValues.email})});
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok||result.success!==true)throw new Error(result.message||'Не вдалося доставити повідомлення.');
+      return result;
+    }));
+    const delivered=results.filter(result=>result.status==='fulfilled').length;
+    if(delivered===CONTACT_ACCESS_KEYS.length){form.reset();status.textContent='Дякуємо! Ваше повідомлення надіслано.';}
+    else if(delivered>0){status.textContent='Повідомлення доставлено не на всі адреси. Воно могло надійти лише на одну з них; спробуйте ще раз трохи пізніше.';}
+    else{status.textContent='Не вдалося надіслати повідомлення. Перевірте підключення до інтернету й спробуйте ще раз.';}
+    submitButton.disabled=false;
   }
   function init(){
     initTheme();attachImageFallback(document);renderCategorySelect();renderFeatured();updateFavoriteCount();route();
@@ -150,3 +165,4 @@
   }
   init();
 })();
+
