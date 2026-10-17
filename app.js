@@ -37,7 +37,7 @@
     return `<article class="recipe-card"><div class="card-image" data-open-recipe="${recipe.id}" tabindex="0" role="button" aria-label="Відкрити рецепт: ${recipe.name}">${recipeImageMarkup(recipe,'loading="lazy"')}<span class="card-category">${recipe.category}</span><button class="favorite-button" type="button" data-favorite="${recipe.id}" aria-label="${isFavorite?'Прибрати з':'Додати до'} обраного: ${recipe.name}" aria-pressed="${isFavorite}">${isFavorite?'♥':'♡'}</button></div><div class="card-body"><h3 data-open-recipe="${recipe.id}" tabindex="0" role="button">${recipe.name}</h3><p class="card-description">${recipe.description}</p><div class="card-meta"><span>${recipe.time} хв</span><span>${recipe.difficulty}</span><span>≈ ${recipe.kcal} ккал</span></div></div></article>`;
   }
   function attachImageFallback(root){
-    $('img',root).forEach(img=>img.addEventListener('error',()=>{
+    $$('img',root).forEach(img=>img.addEventListener('error',()=>{
       const id=img.closest('[data-open-recipe]')?.dataset.openRecipe||currentRecipe?.id;
       const recipe=recipeById(id);
       const fallback=recipe?.fallbackImage||img.dataset.fallback;
