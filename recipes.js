@@ -12,7 +12,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 98,
     "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         4,
@@ -81,8 +81,8 @@ const RECIPES = [
     "kcal": 330,
     "diet": "vegetarian",
     "popularity": 91,
-    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1668285275029-f4335d71deb3?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1668285275029-f4335d71deb3?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         100,
@@ -151,8 +151,8 @@ const RECIPES = [
     "kcal": 290,
     "diet": "vegetarian",
     "popularity": 95,
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1756382713817-1105baceb5df?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1756382713817-1105baceb5df?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         400,
@@ -222,7 +222,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 83,
     "image": "https://images.unsplash.com/photo-1753362437819-2cb546829566?auto=format&fit=crop&w=1000&q=85",
-    "fallbackImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1753362437819-2cb546829566?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         250,
@@ -292,7 +292,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 89,
     "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         2,
@@ -427,7 +427,7 @@ const RECIPES = [
     "diet": "vegan",
     "popularity": 92,
     "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         200,
@@ -497,7 +497,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 96,
     "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         200,
@@ -567,7 +567,7 @@ const RECIPES = [
     "diet": "vegan",
     "popularity": 86,
     "image": "https://images.unsplash.com/photo-1763000215238-38350d3e41ac?auto=format&fit=crop&w=1000&q=85",
-    "fallbackImage": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1763000215238-38350d3e41ac?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         120,
@@ -637,7 +637,7 @@ const RECIPES = [
     "diet": "vegan",
     "popularity": 77,
     "image": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         4,
@@ -707,7 +707,7 @@ const RECIPES = [
     "diet": "omnivore",
     "popularity": 99,
     "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         500,
@@ -777,7 +777,7 @@ const RECIPES = [
     "diet": "omnivore",
     "popularity": 90,
     "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         2,
@@ -847,7 +847,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 87,
     "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         250,
@@ -917,7 +917,7 @@ const RECIPES = [
     "diet": "vegan",
     "popularity": 84,
     "image": "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         1,
@@ -987,7 +987,7 @@ const RECIPES = [
     "diet": "omnivore",
     "popularity": 88,
     "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         400,
@@ -1056,8 +1056,8 @@ const RECIPES = [
     "kcal": 430,
     "diet": "vegan",
     "popularity": 82,
-    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://media.riverford.co.uk/images/photo-800x800-b57ade8524030cbd9e7744977993f311.jpg",
+    "fallbackImage": "https://media.riverford.co.uk/images/photo-800x800-b57ade8524030cbd9e7744977993f311.jpg",
     "ingredients": [
       [
         200,
@@ -1126,8 +1126,8 @@ const RECIPES = [
     "kcal": 290,
     "diet": "vegetarian",
     "popularity": 80,
-    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1694675708473-4114517742e3?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1694675708473-4114517742e3?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         6,
@@ -1266,8 +1266,8 @@ const RECIPES = [
     "kcal": 320,
     "diet": "vegetarian",
     "popularity": 85,
-    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1603236268617-d023914d9416?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1603236268617-d023914d9416?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         400,
@@ -1336,8 +1336,8 @@ const RECIPES = [
     "kcal": 310,
     "diet": "vegetarian",
     "popularity": 89,
-    "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1767065584578-19a28c672512?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1767065584578-19a28c672512?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         4,
@@ -1407,7 +1407,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 78,
     "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         180,
@@ -1476,8 +1476,8 @@ const RECIPES = [
     "kcal": 280,
     "diet": "vegetarian",
     "popularity": 92,
-    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1761637604365-d57cb1ab6f67?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1761637604365-d57cb1ab6f67?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         4,
@@ -1547,7 +1547,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 90,
     "image": "https://images.unsplash.com/photo-1632931057788-645c49bc0db5?auto=format&fit=crop&w=1000&q=85",
-    "fallbackImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1632931057788-645c49bc0db5?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         3,
@@ -1616,8 +1616,8 @@ const RECIPES = [
     "kcal": 420,
     "diet": "vegetarian",
     "popularity": 88,
-    "image": "https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.unsplash.com/photo-1676300186098-9b5ae9916e3c?auto=format&fit=crop&w=1000&q=82",
+    "fallbackImage": "https://images.unsplash.com/photo-1676300186098-9b5ae9916e3c?auto=format&fit=crop&w=1000&q=82",
     "ingredients": [
       [
         250,
@@ -1687,7 +1687,7 @@ const RECIPES = [
     "diet": "vegan",
     "popularity": 81,
     "image": "https://images.unsplash.com/photo-1669544695328-c2a61f9382e8?auto=format&fit=crop&w=1000&q=85",
-    "fallbackImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1669544695328-c2a61f9382e8?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         1,
@@ -1757,7 +1757,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 79,
     "image": "https://marleyspoon.com/media/recipes/50396/main_photos/large/gevulde-7da0fb4e89644a19caf38f174a47daf3.jpeg",
-    "fallbackImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://marleyspoon.com/media/recipes/50396/main_photos/large/gevulde-7da0fb4e89644a19caf38f174a47daf3.jpeg",
     "ingredients": [
       [
         4,
@@ -1827,7 +1827,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 86,
     "image": "https://images.unsplash.com/photo-1607095597425-6f61dee8ab7e?auto=format&fit=crop&w=1000&q=85",
-    "fallbackImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.unsplash.com/photo-1607095597425-6f61dee8ab7e?auto=format&fit=crop&w=1000&q=80",
     "ingredients": [
       [
         2,
@@ -1967,7 +1967,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 85,
     "image": "https://images.pexels.com/photos/18884737/pexels-photo-18884737/free-photo-of-spanakopita-savory-pastry-with-spinach.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "fallbackImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.pexels.com/photos/18884737/pexels-photo-18884737/free-photo-of-spanakopita-savory-pastry-with-spinach.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       [
         400,
@@ -2036,8 +2036,8 @@ const RECIPES = [
     "kcal": 370,
     "diet": "vegan",
     "popularity": 76,
-    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://images.recept.se/images/recipes/auberginegratang-med-roda-linser-och-mozzarella_23917.jpg?auto=format&crop=focalpoint&fit=crop&h=1200&w=1200",
+    "fallbackImage": "https://images.recept.se/images/recipes/auberginegratang-med-roda-linser-och-mozzarella_23917.jpg?auto=format&crop=focalpoint&fit=crop&h=1200&w=1200",
     "ingredients": [
       [
         2,
@@ -2106,8 +2106,8 @@ const RECIPES = [
     "kcal": 390,
     "diet": "vegetarian",
     "popularity": 82,
-    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://www.umami.recipes/api/image/recipes/vX0zmPZTlZjakzPtyWvb/images/Fikrb9agCRjmaibShSw0VR?q=75&w=3840",
+    "fallbackImage": "https://www.umami.recipes/api/image/recipes/vX0zmPZTlZjakzPtyWvb/images/Fikrb9agCRjmaibShSw0VR?q=75&w=3840",
     "ingredients": [
       [
         220,
@@ -2177,7 +2177,7 @@ const RECIPES = [
     "diet": "vegetarian",
     "popularity": 80,
     "image": "https://images.pexels.com/photos/19671333/pexels-photo-19671333/free-photo-of-food-salad-healthy-vegetables.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    "fallbackImage": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+    "fallbackImage": "https://images.pexels.com/photos/19671333/pexels-photo-19671333/free-photo-of-food-salad-healthy-vegetables.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "ingredients": [
       [
         100,
@@ -2246,8 +2246,8 @@ const RECIPES = [
     "kcal": 340,
     "diet": "vegetarian",
     "popularity": 75,
-    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=82",
-    "fallbackImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+    "image": "https://www.oetker.ro/assets/recipes/assets/51a2fa697dcd41be8bbaad9fa5cb6c54/1272x764/baked-apple-oatmeal-landscape-1.webp",
+    "fallbackImage": "https://www.oetker.ro/assets/recipes/assets/51a2fa697dcd41be8bbaad9fa5cb6c54/1272x764/baked-apple-oatmeal-landscape-1.webp",
     "ingredients": [
       [
         120,
