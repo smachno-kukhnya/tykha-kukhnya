@@ -31,33 +31,25 @@
   function updateFavoriteCount(){ $('#favorite-count').textContent=String(favorites.size); }
   function recipeById(id){ return RECIPES.find(recipe=>recipe.id===id); }
   function imageSource(recipe){ return recipe.image; }
-  function recipeImageMarkup(recipe, extra=''){return `<img src="${imageSource(recipe)}" alt="${recipe.name}" data-recipe-title="${recipe.name}" data-fallback="${recipe.fallbackImage||''}" ${extra}>`;}
+  function recipeImageMarkup(recipe, extra=''){return `<img src="${imageSource(recipe)}" alt="${recipe.name}" ${extra}>`;}
   function cardMarkup(recipe){
     const isFavorite=favorites.has(recipe.id);
     return `<article class="recipe-card"><div class="card-image" data-open-recipe="${recipe.id}" tabindex="0" role="button" aria-label="Відкрити рецепт: ${recipe.name}">${recipeImageMarkup(recipe,'loading="lazy"')}<span class="card-category">${recipe.category}</span><button class="favorite-button" type="button" data-favorite="${recipe.id}" aria-label="${isFavorite?'Прибрати з':'Додати до'} обраного: ${recipe.name}" aria-pressed="${isFavorite}">${isFavorite?'♥':'♡'}</button></div><div class="card-body"><h3 data-open-recipe="${recipe.id}" tabindex="0" role="button">${recipe.name}</h3><p class="card-description">${recipe.description}</p><div class="card-meta"><span>${recipe.time} хв</span><span>${recipe.difficulty}</span><span>≈ ${recipe.kcal} ккал</span></div></div></article>`;
   }
-  function showImagePlaceholder(img){
-    const title=img.dataset.recipeTitle||img.alt||'Страва';
-    const placeholder=document.createElement('div');
-    placeholder.className='image-unavailable';
-    placeholder.setAttribute('role','img');
-    placeholder.setAttribute('aria-label',`Фото страви «${title}» недоступне`);
-    const label=document.createElement('span'); label.textContent='Фото страви недоступне';
-    const name=document.createElement('strong'); name.textContent=title;
-    placeholder.append(label,name);
-    img.replaceWith(placeholder);
-  }
   function attachImageFallback(root){
-    $$('img',root).forEach(img=>img.addEventListener('error',()=>{
-      const fallback=img.dataset.fallback;
-      const fallbackUrl=fallback?new URL(fallback,document.baseURI).href:'';
-      const currentUrl=img.currentSrc||img.src;
-      if(!img.dataset.fallbackUsed&&fallbackUrl&&fallbackUrl!==currentUrl){
+    $('img',root).forEach(img=>img.addEventListener('error',()=>{
+      const id=img.closest('[data-open-recipe]')?.dataset.openRecipe||currentRecipe?.id;
+      const recipe=recipeById(id);
+      const fallback=recipe?.fallbackImage||img.dataset.fallback;
+      const attempted=img.dataset.fallbackUsed==='true';
+      if(fallback&&!attempted&&fallback!==img.currentSrc&&fallback!==img.src){
         img.dataset.fallbackUsed='true';
-        img.src=fallbackUrl;
+        img.src=fallback;
         return;
       }
-      showImagePlaceholder(img);
+      img.removeAttribute('src');
+      img.alt=`Фото страви «${recipe?.name||img.alt}» тимчасово недоступне`;
+      img.classList.add('image-unavailable');
     }));
   }
   function updateCards(root){
