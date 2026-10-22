@@ -5,3 +5,5 @@
 
 .contact-form .contact-honeypot{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;opacity:0!important;pointer-events:none!important}
 
+
+.contact-direct{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}.contact-direct .eyebrow{margin-bottom:9px;font-size:9px}.contact-direct .text-link{max-width:100%;font-size:clamp(13px,1.5vw,16px);overflow-wrap:anywhere}.contact-direct .text-link span{flex-shrink:0}
